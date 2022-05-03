@@ -1,0 +1,115 @@
+@import 'https://www.sky.com/assets/toolkit/v2.39.2/toolkit.min.css';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  .search-container{
+    form{
+      .c-form-list__item{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        bottom: 10px;
+        max-width: 670px;
+        width: 100%;
+        margin: auto;
+        font-size: 1.1em;
+        border-radius: 0.25em;
+        height: 2.5em;
+        box-shadow: 0 0 0 5px rgb(145 145 145 / 20%), 0 15px 70px 0 rgb(0 0 0 / 35%);
+        .c-dropdown__search{
+          height: 100%;
+        }
+        button{
+          position: absolute;
+          right: 0;
+          height: 100%;
+          width: 60px;
+          background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+          box-shadow: 0 0px 4px 0px #000;
+          border: none;
+        }
+      } 
+    }
+    .search-container__content{
+      padding: 0 20px;
+      .search-container__list{
+        max-width: 670px;
+        width: 100%;
+        margin: auto;
+        .c-text-slug{
+          background: #0717ed;
+          color: #fff;
+          padding: 5px 10px;
+          font-weight: bold;
+          border-radius: 15px
+        }
+        .listItems{
+          .not-found{
+            font-weight: 600;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 25px;
+            color: #4646a1;
+          }
+        }
+      }
+    }
+  }
+  .hero-container{
+    text-align: center;
+    .c-hero{
+      height: 35vh;
+      min-height: 35vh;
+    }
+  }
+  
+  /* Pagination is here */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    div {
+      width: 33px;
+      height: 33px;
+      background: white;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #bdbdbd;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    div.active {
+      background-color: #0555fe;
+      color: white;
+    }
+    div.pagination-arrow {
+      font-size: 24px;
+      color: #91b4f9;
+    }
+    div.pagination-arrow.inactive {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+  }
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    height: 4em;
+    display: block;
+  }
+}
