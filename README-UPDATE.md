@@ -32,7 +32,7 @@ EndPoint URL: http://localhost:3001/search?query=broadband&page=1&limit=10&slug=
 
 http://localhost:3001/search?query=broadband&slug=1
 
-Note: Here it was not clear if last slug doesn't start with 'sky' then what slug we will consider so I used the last handle as a slug.
+**Note**: Here it was not clear if last slug doesn't start with 'sky' then what slug we will consider so I used the last handle as a slug.
 ![slug](https://user-images.githubusercontent.com/9865547/166441558-8140a33d-87c3-401e-a265-57bcb5f54a11.png)
 
 
@@ -52,7 +52,7 @@ sort_key: this parameter is case sensitive.
 - There should be 10 results per page
 - This parameter should start at 1
 - For example, given `page=3` you should return results at indices `30-39`
-- 
+
 EndPoint URL: http://localhost:3001/search?query=broadband&page=1&limit=10
 
 http://localhost:3001/search?query=broadband&page=1
@@ -64,6 +64,7 @@ http://localhost:3001/search?query=broadband&page=1
 - Update the search page to save recent search terms in the browser (Cookies or Local Storage) and display them in a list.
 - There should never be more than 5 saved terms.
 - The terms should be removed according to FIFO (First In First Out)
-Note: I am not listing somewhere but I am storing with local storage.
+
+**Note**: I am not listing somewhere, just storing with local storage in FIFO sequence, if any term is alreay exist with recent 5 and we are searching again then in that case I am updating the index of that term .
 
 <img width="415" alt="Screenshot 2022-05-03 at 12 05 22 PM" src="https://user-images.githubusercontent.com/9865547/166442500-2a6884df-ec3e-4b24-bc27-a611cf396705.png">
